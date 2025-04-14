@@ -1,7 +1,7 @@
 CC = gcc -std=gnu99
 FLAGS = -ggdb
 
-run: signal_reciever signal_sender
+all: signal_reciever signal_sender
 
 signal_reciever: signal_reciever.c
 	$(CC) $(FLAGS) $< -o $@

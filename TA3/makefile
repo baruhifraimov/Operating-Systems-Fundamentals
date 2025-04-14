@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -Wall -g -fPIC
 SOFLAGS = -shared
 
-run: main
+all: main
 
 main: main.cpp libmandellib.so mandel.hpp
 	$(CXX) $(CXXFLAGS) $< -L. -Wl,-rpath,. -lmandellib -o $@

@@ -2,10 +2,10 @@ CXX = g++
 CXXFLAGS = -Wall -g
 GCOVFLAGS = -fprofile-arcs -ftest-coverage
 
-run: main
+all: main
 
 main: main.cpp
 	$(CXX) $(CXXFLAGS) $(GCOVFLAGS) $< -o $@
 
 clean:
-	rm *.h.gcov *.tcc.gcov
+	rm *.gcov
